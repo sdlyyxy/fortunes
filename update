@@ -3,9 +3,9 @@
 import sys,os
 try:
     if sys.argv[1]=='push':
-        os.system("cp data/* /usr/share/games/fortunes/")
+        os.system("cp -f data/* /usr/share/games/fortunes/")
     elif sys.argv[1]=='pull':
-        os.system("cp /usr/share/games/fortunes/* data")
+        os.system("cp -f /usr/share/games/fortunes/* data")
     else:
         print("Usage: update [push] [pull]")
 except:
